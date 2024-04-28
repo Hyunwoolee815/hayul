@@ -5,7 +5,8 @@ import xmltodict
 
 def load_data():
     # CSV 파일 로드
-    return pd.read_csv('C:/python.lee/naverblog/sicode.csv')
+    filepath = "sicode.csv"
+    return pd.read_csv(filepath)
 
 def get_real_estate_data(sigungu_code, yyyymm):
     # API 요청 준비
