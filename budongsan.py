@@ -51,7 +51,7 @@ def main():
                     # 원하는 열만 선택하여 표시
                     columns_to_display = ['년', '월', '일', '아파트', '동', '층', '전용면적', '거래금액']
                     display_df = df[columns_to_display]
-                    st.dataframe(display_df, width=1400, height=1000 )
+                    st.dataframe(display_df, width=1700, height=1000 )
                 else:
                     st.error("API 요청 실패")
             else:
