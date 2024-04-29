@@ -49,7 +49,7 @@ def main():
                 df = get_real_estate_data(sigungu_code, yyyymm)
                 if df is not None:
                     # 원하는 열만 선택하여 표시
-                    columns_to_display = ['년', '월', '일', '아파트', '동', '층', '전용면적', '거래금액']
+                    columns_to_display = ['년', '월', '일', '법정동', '아파트', '동', '층', '전용면적', '거래금액']
                     display_df = df[columns_to_display]
                     st.dataframe(display_df, width=1700, height=1000 )
                 else:
