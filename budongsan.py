@@ -11,7 +11,7 @@ def load_data():
 def get_real_estate_data(sigungu_code, yyyymm):
     # API 요청 준비
     service_key = "pII%2BrqHs3TfQwKgsYX%2Fx7fJuQiml0eppEVSKFnXO%2BJ4DgrCY53X9tKkMZaS4%2FbOTcfYEOfq3WtZoeONMjs3nPw%3D%3D"
-    url = f"http://openapi.molit.go.kr/OpenAPI_ToolInstallPackage/service/rest/RTMSOBJSvc/getRTMSDataSvcAptTradeDev?serviceKey={service_key}&pageNo=1&numOfRows=30&LAWD_CD={sigungu_code}&DEAL_YMD={yyyymm}"
+    url = f"http://openapi.molit.go.kr/OpenAPI_ToolInstallPackage/service/rest/RTMSOBJSvc/getRTMSDataSvcAptTradeDev?serviceKey={service_key}&pageNo=1&numOfRows=9999&LAWD_CD={sigungu_code}&DEAL_YMD={yyyymm}"
     response = requests.get(url)
     if response.status_code == 200:
         content = response.content.decode('utf-8')
